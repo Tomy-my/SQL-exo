@@ -162,4 +162,20 @@ $reponse->closeCursor();
 
 
 
-<h1>Age des humains + moyenne entre femme & homme</h1>
+<?php
+
+// J'ajoute un humain
+$statement = "INSERT INTO users VALUES (NULL, 'Test2', 'TEST', 'test@test.fr', 'Male', '127.0.0.1', '26/02/2000', '', '', '', 'FR')";
+$data = $bdd->exec($statement);
+
+
+// Je modifie l'email
+$statement = "UPDATE users SET email = 'mailtest@test.fr' WHERE email = 'test@test.fr'";
+$data = $bdd->exec($statement);
+
+
+// Je le supprime
+// $statement ="DELETE FROM users WHERE email = 'mailtest@test.fr'";
+// $data = $bdd->exec($statement);
+
+
