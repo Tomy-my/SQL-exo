@@ -157,3 +157,9 @@ while ($data = $reponse->fetch())
 $reponse->closeCursor(); 
 
 ?>
+
+
+
+
+
+<h1>Age des humains + moyenne entre femme & homme</h1>
